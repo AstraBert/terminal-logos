@@ -40,7 +40,7 @@ var printCmd = &cobra.Command{
 	Use:     "create",
 	Aliases: []string{"c"},
 	Short:   "Create a logo with the specified phrase, color and font.",
-	Long:    "Create a color with the specified phrase (-p, --phrase flag), color (-c, --color flag) and font (-f, --font flag). Example usage: `terminal-logos create --phrase 'Hello Logos' --color 'cyan' --font 'roman'`",
+	Long:    "Create a logo with the specified phrase (-p, --phrase flag), color (-c, --color flag) and font (-f, --font flag). Example usage: `terminal-logos create --phrase 'Hello Logos' --color 'cyan' --font 'roman'`",
 	Run: func(cmd *cobra.Command, args []string) {
 		if phrase == "" {
 			fmt.Fprintf(os.Stderr, "Error: a phrase to be printed is required. Use -p or --phrase flag.\n")
